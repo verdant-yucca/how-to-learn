@@ -1,3 +1,5 @@
+
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -13,6 +15,9 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  background-color:  #f2f2f2;
+  position: relative;
+  display: flex;
   /* выше установили ограничения для секции */
 }
 
@@ -20,6 +25,128 @@
 .header__square-pic {
   height: 568px;
   width: 568px;
+}
+
+.header_logo {
+  height: 32px;
+  width: 183px;
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  background-image: url("../images/logo_place_header.svg");
+  z-index: 5;
+}
+
+.header_title {
+  width: 730px;
+  position: absolute;
+  min-height: 92px;
+  left: 64px;
+  font-weight: bold;
+  align-self: center;
+  font-size: 102px;
+  line-height: 96px;
+  z-index: 4;
+}
+
+.header_subtitle {
+  width: 388px;
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: normal;
+  z-index: 3;
+}
+
+.header_main-illustration {
+  width: 765px;
+  height: 608px;
+  background-size: cover;
+  background-image: url("../images/header-image.png");
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.header_square-pic {
+  position: absolute;
+  top: 64px;
+  right: 0;
+  width: 568px;
+  height: 568px;
+  background-color: #2f80ed;
+  z-index: 1;
+}
+
+.description {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  /* выше установили ограничения для секции */
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 24px;
+}
+
+.two-columns_brief {
+  width: 175px;
+  position: relative;
+  left: 0;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+}
+
+.two-columns_main-text {
+  width: 80%;
+  position: relative;
+  right: 0;
+  min-width: 784px;
+}
+
+.two-columns_paragraph {
+  margin-top: 30px;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+}
+
+.two-columns_paragraph:first-of-type {
+  margin: 0;
+}
+
+.two-columns_span-accent {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: bold;
+}
+
+.digits {
+  border: 3px solid red;
+}
+
+.section-title {
+  width: 60%;
+  margin-bottom: 20px;
+  font-size: 60px;
+  line-height: 1.15;
+  font-weight: bold;
+  border: 3px solid red;
+}
+
+.section-subtitle {
+  width: 60%;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+  border: 3px solid red;
 }
 
 /* и элемента с модификатором вида ключ-значение */
