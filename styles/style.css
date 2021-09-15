@@ -9,6 +9,8 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+/* Header */
+
 .header {
   height: 100vh;
   min-height: 600px;
@@ -84,6 +86,14 @@
   z-index: 0;
 }
 
+/* Main */
+
+/* К сожалению, не понял для чего нужен этот класс. */
+.content {
+}
+
+/* Main. Section description */
+
 .description {
   margin-top: 100px;
 }
@@ -130,6 +140,8 @@
   line-height: 34px;
   font-weight: bold;
 }
+
+/* Main. Section digits */
 
 .digits {
   margin: 100px 0 0 0;
@@ -188,6 +200,8 @@
   font-weight: normal;
 }
 
+/* Main. Section feynman */
+
 .feynman {
   height: 890px;
   background-color: #F2F2F2;
@@ -230,6 +244,8 @@
   color: #2f80ed;
   text-decoration: none;
 }
+
+/* Main. Section kayfman */
 
 .kaufman {
   display: flex;
@@ -280,6 +296,8 @@
   background-position: center;
   z-index: 1;
 }
+
+/* footer */
 
 .footer {
   padding: 60px 0 40px;
