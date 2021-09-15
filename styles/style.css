@@ -334,9 +334,8 @@
 }
 
 .logo_place_footer {
-  width: 183px;
-  height: 35px;
-  background-image: url(../images/logo_place_footer.svg);
+  height: 32px;
+  background-image: url(..);
 }
 
 .footer__author {
