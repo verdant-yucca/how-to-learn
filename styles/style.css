@@ -318,6 +318,7 @@
 .footer__column_content_copyright {
   flex-basis: 711px;
   align-items: flex-start;
+  border: 1px solid red;
 }
 
 .footer__column {
@@ -335,7 +336,7 @@
 
 .logo_place_footer {
   height: 35px;
-  background-image: url(..);
+  border: 1px solid red;
 }
 
 .footer__author {
