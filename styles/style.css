@@ -38,8 +38,7 @@
   width: 730px;
   margin: 0;
   padding: 0;
-  position: absolute;
-  left: 64px;
+  margin-left: 64px;
   font-size: 102px;
   line-height: 96px;
   font-weight: bold;
@@ -144,7 +143,7 @@
 /* Main. Section digits */
 
 .digits {
-  margin: 100px 0 0 0;
+  margin: 100px 0;
   display: flex;
   flex-direction: column;
 }
@@ -188,7 +187,7 @@
   margin: 0;
   padding: 0;
   font-size: 24px;
-  line-height: 1.5;
+  line-height: 1.15;
   font-weight: bold;
 }
 
@@ -203,7 +202,7 @@
 /* Main. Section feynman */
 
 .feynman {
-  height: 890px;
+  min-height: 890px;
   background-color: #F2F2F2;
   background-image: url(../images/feynman.png);
   background-position: bottom left;
@@ -213,9 +212,7 @@
 
 .feynman__title {
   width: 648px;
-  /*Не смог понять, почему морджин делает верхний отступ от таблицы в диджитс,
-  а не от родительского блока фейнмана. Временно сделал через паддинг*/
-  margin: 100px auto 70px;
+  margin: 0 auto 70px;
   padding: 100px 0 0;
   font-size: 120px;
   line-height: 1.15;
@@ -300,33 +297,30 @@
 /* footer */
 
 .footer {
-  padding: 60px 0 40px;
-  box-sizing: border-box;
+  min-height: 350px;
+  display: flex;
   background-color: #1f1f1f;
   color: white;
 }
 
 .footer__columns {
+  margin: 60px auto 40px;
   width: 90%;
-  min-height: 350px;
-  margin: auto;
   display: flex;
   justify-content: space-between;
-  align-self: center;
+}
+
+.footer__column {
 }
 
 .footer__column_content_copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   flex-basis: 711px;
   align-items: flex-start;
 }
 
-.footer__column {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-/*К сожалению, я не понял зачем в брифе указаны эти два класса*/
 .footer__column_content_info {
 }
 
@@ -346,7 +340,7 @@
   text-align: left;
 }
 
-.footer__column_heading {
+.footer__column-heading {
   margin: 0;
   padding: 0;
   font-size: 18px;
@@ -355,14 +349,14 @@
   text-align: left;
 }
 
-.footer__column_links {
+.footer__column-links {
   margin: 20px 0 0;
   padding: 0;
   align-items: flex-start;
   list-style: none;
 }
 
-.footer__column_link {
+.footer__column-link {
   margin: 0;
   padding: 0;
   font-size: 18px;
@@ -372,7 +366,7 @@
   color: #fff;
 }
 
-.footer__column_social_icon {
+.footer__social_icon {
   width: 16px;
   height: 16px;
   margin-right: 10px;
