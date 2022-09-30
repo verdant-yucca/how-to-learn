@@ -22,4 +22,4 @@
 
 В корне лежит файл .editorconfig с настройками для текстового редактора. 
 
- 
+Демка на gh-pages: https://verdant-yucca.github.io/how-to-learn/
